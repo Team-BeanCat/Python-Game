@@ -1,0 +1,50 @@
+{
+    "00": {
+        "message": "Vroom! The noise of the train rushes in your ears.",
+        "options": ["Wait", "Wait faster", "Wait for the train to arrive"],
+        "locations": ["02", "01", "02"],
+        "type": "story"
+    },
+    "01": {
+        "message": "You wait too fast and the train hits you. The end. (Did you know? A snail can sleep for three years.)",
+        "options": [],
+        "locations": [],
+        "type": "end"
+    },
+    "02": {
+        "message": "You arrive at work and are immediately called into a vote. Do you vote yes or no? \n'Protect Wildlife and Fish in Need of Conservation Act' - you are late and don't have time to read it, what do you vote?",
+        "options": ["Yes", "No"],
+        "locations": ["04", "03"],
+        "type": "story"
+    },
+    "03": {
+        "message": "Congratulations. You chose the wrong choice.. Wildlife should be protected so there isn't another extinction level event. (Did you know? The heart of a shrimp is located in its head)",
+        "options": [],
+        "locations": [],
+        "type": "end"
+    },
+    "04": {
+        "message": "You go and get some lunch. When the server hands you the burrito, they ask whether you want a plastic straw, or a cardboard straw.",
+        "options": ["Plastic", "Cardboard"],
+        "locations": ["03", "05"],
+        "type": "story"
+    },
+    "05": {
+        "message": "As you walk out, a random stranger materializes infront of you. He asks whether you want some turtle soup or not. Do you accept?",
+        "options": ["Yes", "No"],
+        "locations": ["06", "07"],
+        "type": "story"
+    },
+    "06": {
+        "message": "The stranger rips off his mask and reveals he is your boss, you are now fired from the wildlife committee. The end. (Did you know? The fingerprints of a koala are so indistinguishable from humans that they have on occasion been confused at a crime scene.)",
+        "options": [],
+        "locations": [],
+        "type": "end"
+    },
+    "07": {
+        "message": "You walk back to work and think nothing of the interaction. You sit down at your computer.",
+        "options": ["Login", "Stare at the screen and wait for something to happen"],
+        "locations": ["console", "console"],
+        "type": "jump"
+    }
+}

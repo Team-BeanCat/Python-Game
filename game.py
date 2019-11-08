@@ -45,7 +45,11 @@ if __name__ == '__main__':
         while True:
             clear()
             print(world.message(user.location()).format(user.data["name"]))
-            print("\n".join(world.options(user.location())))      #Print the options for the current world
+            print()
+            options = world.options(user.location())
+            for i in range(len(options)):
+                print(f"{str(i + 1)}. {options[i]}")     #Print the options for the current world
+
             option = input("\n")
 
             try:
@@ -57,12 +61,18 @@ if __name__ == '__main__':
             user.data["location"] = world.locations(user.location())[int(option) - 1]
 
         if world.data[user.location()]["type"] == "jump":
-            user.data["location"] = "00"
             user.data["world"] = world.locations(user.location())[int(option) - 1]
+            user.data["location"] = "00"
+            if user.data["world"] == "console":
+                while True:
+                    print("This is not done yet!")
+
             world = reader.world(user.data["world"])
 
         if world.data[user.location()]["type"] == "end":
             print(world.message(user.location()))
+            user.data["world"] = "home"
+            user.data["location"] = "00"
             running = False
 
         user.save()

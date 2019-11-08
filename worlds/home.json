@@ -1,26 +1,32 @@
 {
     "00": {
         "message": "Welcome home, {}.",
-        "options": ["1. Take a bath", "2. Go to bed"],
+        "options": ["Take a bath", "Go to bed"],
         "locations": ["01", "02"],
         "type": "story"
     },
     "01": {
-        "message": "You take a bath..",
-        "options": ["1. Go to bed", "2. Make some toast"],
-        "locations": ["02", "03"],
+        "message": "You take a bath.",
+        "options": ["Go to bed"],
+        "locations": ["02"],
         "type": "story"
     },
     "02": {
         "message": "You go to bed, after sleeping through the night, you wake up at 7:00am",
-        "options": ["1. Take a bath", "2. Go to bed"],
-        "locations": ["01", "02"],
+        "options": ["Brush teeth", "Make bread"],
+        "locations": ["03", "04"],
         "type": "story"
     },
     "03": {
-        "message": "You have the dumb idea to try and make some toast in the bathtub. You Die.",
-        "options": [],
-        "locations": [],
-        "type": "end"
+        "message": "You brush your teeth and leave your house to go to work.",
+        "options": ["Lock door", "Do not lock door"],
+        "locations": ["work", "work"],
+        "type": "jump"
+    },
+    "04": {
+        "message": "You make some bread then leave your house and go to work.",
+        "options": ["Lock door", "Do not lock door"],
+        "locations": ["work", "work"],
+        "type": "jump"
     }
 }
