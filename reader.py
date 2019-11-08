@@ -1,17 +1,17 @@
 from os import path
 from json import load, dump
 
-class user(object):
-    def __init__(self, username):
+class user(object):     #Object for s uer
+    def __init__(self, username):       
         self.file = f".\\saves\\{username}.json"
         self.read()
 
-    def read(self):
+    def read(self):     #Read from the user's json file
         if path.exists(self.file):
             with open(self.file) as f:
                 self.data = load(f)
 
-    def save(self):
+    def save(self):     #Write the user's current location to the json file
         with open(self.file, "w") as f:
             dump(self.data, f, indent=4)
 
@@ -19,7 +19,7 @@ class user(object):
         return self.data["location"]
 
 
-class world(object):
+class world(object):    #Object for a world
     def __init__(self, name):
         self.file = f".\\worlds\\{name}.json"
         self.read()
