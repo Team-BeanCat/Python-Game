@@ -1,0 +1,26 @@
+{
+    "00": {
+        "message": "Welcome home, {}.",
+        "options": ["1. Take a bath", "2. Go to bed"],
+        "locations": ["01", "02"],
+        "type": "story"
+    },
+    "01": {
+        "message": "You take a bath..",
+        "options": ["1. Go to bed", "2. Make some toast"],
+        "locations": ["02", "03"],
+        "type": "story"
+    },
+    "02": {
+        "message": "You go to bed, after sleeping through the night, you wake up at 7:00am",
+        "options": ["1. Take a bath", "2. Go to bed"],
+        "locations": ["01", "02"],
+        "type": "story"
+    },
+    "03": {
+        "message": "You have the dumb idea to try and make some toast in the bathtub. You Die.",
+        "options": [],
+        "locations": [],
+        "type": "end"
+    }
+}
