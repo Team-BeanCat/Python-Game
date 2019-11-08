@@ -42,9 +42,9 @@
         "type": "end"
     },
     "07": {
-        "message": "You walk back to work and think nothing of the interaction. You sit down at your computer.",
-        "options": ["Login", "Stare at the screen and wait for something to happen"],
-        "locations": ["console", "console"],
-        "type": "jump"
+        "message": "You leave work and go back home. Congratulations you won!",
+        "options": [],
+        "locations": [],
+        "type": "end"
     }
 }
